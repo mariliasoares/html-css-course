@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"> <!--nao da bug com acentos-->
+        <title>Principais tags 01</title>
+    </head>
+    <body>
+        <h1>Essas são as principais tags</h1>
+
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+
+        <h2>Outras tags importantes</h2>
+
+        <!-- strong tem a ver com semântica, pra máquina entender que é pra máquina entender q é importante-->
+        <p>Criamos bicicletas <strong>personalizadas</strong></p>
+
+        <!-- <b> destaca a palavra, estética -->
+        <p>
+            <b>Amamos</b> nossas bicicletas.
+        </p>
+
+        <!-- <em> faz o italico mas é pra semântica -->
+        <p>
+            Temos <em>muito</em> trabalho em casa.
+        </p>
+
+        <!-- <i> destaca palavras em língua estrangeira -->
+        <p>
+            A nossa casa é <i>su</i> casa
+        </p>
+        <a href="produtos.html">Nossos produtos</a>
+        <a href="http://google.com">Google saindo do site</a>
+        <a href="http://google.com" target="_blank">Google em uma nova aba</a>
+        <a href="http://w3schools.com" target="_blank">Dicionário da web</a>
+        <br>
+        <img src="img/zen.png" alt="Zen">
+        <br>
+        <h2>UL (unordered list)</h2>
+        <ul>
+            <li>Passeio</li>
+            <li>Esporte</li>
+            <li>Lazer</li>
+        </ul>
+        <ol>
+            <li>Passeio</li>
+            <li>Esporte</li>
+            <li>Lazer</li>
+        </ol>
+
+        <!--tag table serve para representar dados tabelados-->
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Harley D.</td>
+                <td>R$800</td>
+            </tr>
+            <tr>
+                <td>Harley D.</td>
+                <td>R$800</td>
+            </tr>
+        </table>
+        <div> <!--span falar no css-->
+            <p>Eduardo <span>Span</span></p>
+        </div>
+
+        <h2>Section and Article</h2> <!--- semânticos que servem pra estruturar o documento e ajudar o robô que lê o código e procura sentido-->
+        
+        <section>
+            <p>Uma parte genérica do documento</p>
+        </section>
+        <article>
+            <p>Uma parte independente do documento</p>
+            <!--serve para artigos no site (www.tecmundo.com.br)-->
+        </article>
+        
+        <h2>Form</h2>
+        
+        <form method="post" name="form">
+            <div>
+                <label for="nome">Name</label><!--for: linka o label com o input -->
+                <input id="nome" name="nome" type="text" required><!--id: para linkar com label -->
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" required>
+            </div>
+
+            <div>
+                <p>Choose your product</p>
+                <label for="retro"><input id="retro" type="checkbox" value="retro">Retro</label>
+            </div>
+
+            <label for="mensagem">Message</label>
+            <textarea id="mensagem" name="mensagem" type="text" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form> <!--a ação do formulário é feita com uma ling de programação-->
+        
+        <footer>
+            <p>Footer - Some Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
